@@ -15,9 +15,9 @@ class SocialMediaApp extends StatelessWidget {
       theme: ThemeData(primarySwatch: Colors.deepPurple),
       initialRoute: '/',
       routes: {
-        '/': (context) => LoginScreen(),
-        '/create-post': (context) => CreatePostScreen(),
-        '/schedule': (context) => SchedulerScreen(),
+        '/': (context) => const LoginScreen(),
+        '/create-post': (context) => const CreatePostScreen(),
+        '/schedule': (context) => const SchedulerScreen(),
       },
     );
   }
