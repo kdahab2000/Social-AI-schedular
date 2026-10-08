@@ -17,3 +17,7 @@ A Flutter app that allows users to:
 - Login to social platforms
 - AI post generation
 - Post scheduling with date/time picker
+
+## Token usage meter
+
+`TokenUsageBar` (lib/widgets) shows tokens used this session, API price per 1M tokens (input/output) and the session cost. Put it above any text box; it reads from the shared `TokenUsageTracker.instance`. Tap it to edit prices. Feed it with `recordFromUsageJson(response["usage"])` after each AI call.
