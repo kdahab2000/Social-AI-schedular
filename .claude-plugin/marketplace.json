@@ -1,0 +1,5 @@
+{
+  "name": "khaled-mods",
+  "owner": { "name": "Khaled Aboeldahab" },
+  "plugins": [{ "name": "usage-meter", "source": "./mods/usage-meter" }]
+}
