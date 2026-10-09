@@ -34,7 +34,7 @@ export const register: Register = (on, options) => {
   on('ui.render', { component: 'AbovePrompt' }, async ($, e, next) => {
     const t = await read($, tally)
 
-    if (e.props.hasSurvey || t.steps === 0) {
+    if (e.props.hasSurvey) {
       return next(e)
     }
 
