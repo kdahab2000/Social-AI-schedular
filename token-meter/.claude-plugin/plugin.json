@@ -1,0 +1,10 @@
+{
+  "name": "token-meter",
+  "version": "0.1.0",
+  "description": "Band above the prompt box: session tokens used, API price per 1M tokens, and the cost of the tokens used.",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "inputPerMillion": { "type": "number", "title": "Input $/1M tokens", "description": "API price per million input tokens (USD)", "default": 3 },
+    "outputPerMillion": { "type": "number", "title": "Output $/1M tokens", "description": "API price per million output tokens (USD)", "default": 15 }
+  }
+}
