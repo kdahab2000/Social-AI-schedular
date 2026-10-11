@@ -4,6 +4,10 @@ export type Tally = {
   cacheRead: number
   cacheWrite: number
   steps: number
+  /** USD, each request priced at its own model's rates */
+  cost: number
+  /** model id of the latest request */
+  model: string
 }
 
 declare module 'claude-code' {
