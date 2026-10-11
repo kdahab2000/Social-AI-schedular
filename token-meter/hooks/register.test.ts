@@ -11,6 +11,6 @@ test('longest prefix picks the right model price', () => {
 
 test('request cost prices input, output and cache', () => {
   const p = { input: 4, output: 20 }
-  expect(requestCost(p, { input: 1e6, output: 1e6, cacheRead: 0, cacheWrite: 0 })).toBeCloseTo(24)
-  expect(requestCost(p, { input: 0, output: 0, cacheRead: 1e6, cacheWrite: 1e6 })).toBeCloseTo(0.4 + 5)
+  expect(Math.round(requestCost(p, { input: 1e6, output: 1e6, cacheRead: 0, cacheWrite: 0 }) * 1e6)).toBe(24e6)
+  expect(Math.round(requestCost(p, { input: 0, output: 0, cacheRead: 1e6, cacheWrite: 1e6 }) * 1e6)).toBe(5.4e6)
 })
