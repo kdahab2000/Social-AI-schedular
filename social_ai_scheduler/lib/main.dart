@@ -4,10 +4,12 @@ import 'screens/create_post_screen.dart';
 import 'screens/scheduler_screen.dart';
 
 void main() {
-  runApp(SocialMediaApp());
+  runApp(const SocialMediaApp());
 }
 
 class SocialMediaApp extends StatelessWidget {
+  const SocialMediaApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -15,9 +17,9 @@ class SocialMediaApp extends StatelessWidget {
       theme: ThemeData(primarySwatch: Colors.deepPurple),
       initialRoute: '/',
       routes: {
-        '/': (context) => LoginScreen(),
-        '/create-post': (context) => CreatePostScreen(),
-        '/schedule': (context) => SchedulerScreen(),
+        '/': (context) => const LoginScreen(),
+        '/create-post': (context) => const CreatePostScreen(),
+        '/schedule': (context) => const SchedulerScreen(),
       },
     );
   }
